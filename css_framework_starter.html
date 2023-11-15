@@ -1,27 +1,25 @@
 <html>
   <head>
     <title>Whitney Works Framework Starter Sample</title>
-    <link rel="stylesheet" type="text/css" href="whitney_works.css" />
+    <link rel="stylesheet" type="text/css" href="whitneywrks.css" />
   </head>
   <!-- Page Wraper -->
   <body class="dark">
     <!-- Page Navigation -->
     <div class="navbar">
       <ul>
-        <li><h1 class="title">Framework Name</h1></li>
-        <!-- <li><a href="#colors">Colors</a></li> -->
+        <li><h1 class="title">WhitneyWrks</h1></li>
         <li><a href="#navbar">Navbar</a></li>
         <li><a href="#headings">Headings</a></li>
         <li><a href="#type">Type</a></li>
         <li><a href="#links">Links</a></li>
-        <li><a href="#colors">Links</a></li>
+        <li><a href="#colors">Colors</a></li>
         <li><a href="#forms">Forms</a></li>
         <li><a href="#buttons">Buttons</a></li>
-        <!-- <li><a href="#footer">Footer</a></li> -->
       </ul>
 
       <ul>
-        <li><a href="link/to/your/framework/repo">GitHub</a></li>
+        <li><a href="https://github.com/alexa-whitney/ACS3320-CSS-Framework">GitHub</a></li>
       </ul>
     </div>
 
@@ -29,7 +27,7 @@
     <div class="container main">
       <!-- --------------------------- -->
       <!-- Headings -->
-      <section id="headings">
+      <section id="headings" class="whitney-card">
         <h1>Headings</h1>
         <h1>H1 Heading</h1>
         <h2>H2 Heading</h2>
@@ -53,7 +51,7 @@
       <!-- --------------------------- -->
 
       <!-- 3x3 Card Container -->
-      <div class="card-container">
+      <div class="card-container whitney-card">
         <!-- Each card/section goes here -->
         <div class="card">Card Content 1</div>
         <div class="card">Card Content 2</div>
@@ -68,7 +66,7 @@
 
       <!-- --------------------------- -->
       <!-- Paragraph Style -->
-      <section id="type">
+      <section id="type" class="whitney-card">
         <h1>Paragraph styles</h1>
         <p>
           This is the <strong>strong tag</strong> in a paragraph. This is the
@@ -89,7 +87,7 @@
 
       <!-- --------------------------- -->
       <!-- Button Styles -->
-      <section id="buttons">
+      <section id="buttons" class="whitney-card">
         <h2>Buttons</h2>
 
         <p>This is your average button. You might want to click it.</p>
@@ -131,7 +129,7 @@
 
       <!-- --------------------------- -->
       <!-- Link styles -->
-      <section>
+      <section class="whitney-card">
         <h2>Links</h2>
         <p>
           This <a href="#">paragraph</a> contains a couple
@@ -149,71 +147,50 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 
       <!-- --------------------------- -->
       <!-- Form Styles -->
-      <section>
+      <section class="whitney-card">
         <h2>Forms and controls</h2>
         <form>
-          <label>
-            <span>Text:</span>
-            <input type="text" placeholder="What is your name?" />
-          </label>
-
-          <label>
-            <span>Email:</span>
-            <input type="email" placeholder="What is your name?" />
-          </label>
-
-          <label>
-            <span>Password:</span>
-            <input type="password" placeholder="What is your name?" />
-          </label>
-
-          <label>
-            <span>Your comments</span>
-            <textarea placeholder="Your comment"></textarea>
-          </label>
-
-          <!-- Switch with Click -->
-          <div>
-            <label id="switch-2" class="switch-2">
-              <input type="checkbox" />
-              <div>
-                <div></div>
-              </div>
+          <div class="form-group">
+            <label for="name">Text:</label>
+            <input type="text" id="name" placeholder="What is your name?" />
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="What is your email?" />
+          </div>
+      
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Create a password" />
+          </div>
+      
+          <div class="form-group">
+            <label for="comments">Your comments</label>
+            <textarea id="comments" placeholder="Your comment"></textarea>
+          </div>
+      
+          <div class="form-group">
+            <label for="switch-2" class="switch-2">
+              <input type="checkbox" id="switch-2" />
+              <span class="slider round"></span>
             </label>
             <span>Click Switch no JS</span>
           </div>
-
-          <label class="control-checkbox"
-            >One
-            <input type="checkbox" checked="checked" />
-            <span></span>
-          </label>
+      
+          <div class="form-group">
+            <label class="control-checkbox">
+              One
+              <input type="checkbox" checked="checked" />
+              <span class="checkbox-custom"></span>
+            </label>
+          </div>
         </form>
-
-        <h3>Input and label</h3>
-        <pre>
-				<code>
-&lt;label&gt;
-&#x9;&lt;span&gt;Text:&lt;/span&gt;
-&#x9;&lt;input type=&quot;text&quot; placeholder=&quot;What is your name?&quot;&gt;
-&lt;/label&gt;
-				</code>
-			</pre>
-
-        <h3>Checkbox and label</h3>
-        <pre>
-				<code>
-&lt;label class=&quot;control-checkbox&quot;&gt;One
-&#x9;&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot;&gt;
-&#x9;&lt;span&gt;&lt;/span&gt;
-&lt;/label&gt;
-				</code>
-						</pre>
       </section>
 
       <!-- --------------------------- -->
       <!-- Colors -->
-      <section id="colors">
+      <section id="colors class="whitney-card"">
         <h1>Colors</h1>
         <div class="color-grid">
           <div style="background-color: var(--color-background)">
@@ -299,7 +276,7 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 
       <!-- --------------------------- -->
       <!-- Nav Bar styles -->
-      <section id="navbar">
+      <section id="navbar" class="whitney-card">
         <h1>Navbar</h1>
 
         <h2>Navbar 1</h2>
@@ -335,7 +312,7 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 
       <!-- --------------------------- -->
       <!-- Footer Styles -->
-      <section id="footers">
+      <section id="footers" class="whitney-card">
         <h2>Page Footer</h2>
         <div class="page-footer">
           <ul>
@@ -362,27 +339,27 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
       </section>
     </div>
     <div class="page-footer">
-        <div class="footer-content">
-            <ul>
-                <li><h3>Content</h3></li>
-                <li><a href="#colors">Colors</a></li>
-                <li><a href="#navbar">Navbar</a></li>
-                <li><a href="#headings">Headings</a></li>
-                <li><a href="#type">Type</a></li>
-                <li><a href="#forms">forms</a></li>
-            </ul>
+      <div class="footer-content">
+        <ul>
+          <li><h3>Content</h3></li>
+          <li><a href="#colors">Colors</a></li>
+          <li><a href="#navbar">Navbar</a></li>
+          <li><a href="#headings">Headings</a></li>
+          <li><a href="#type">Type</a></li>
+          <li><a href="#forms">forms</a></li>
+        </ul>
 
-            <ul>
-                <li><h3>Resources</h3></li>
-                <li><a href="">CSS Tricks</a></li>
-                <li><a href="">CSS Tricks</a></li>
-            </ul>
+        <ul>
+          <li><h3>Resources</h3></li>
+          <li><a href="">CSS Tricks</a></li>
+          <li><a href="">CSS Tricks</a></li>
+        </ul>
 
-            <ul>
-                <li><h3>Contact</h3></li>
-                <li><a href="https://github.com/soggybag/frmwrk-css">GitHub</a></li>
-            </ul>
-        </div>
+        <ul>
+          <li><h3>Contact</h3></li>
+          <li><a href="https://github.com/alexa-whitney/ACS3320-CSS-Framework">GitHub</a></li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
