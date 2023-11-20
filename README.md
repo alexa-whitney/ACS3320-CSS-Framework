@@ -94,27 +94,26 @@ Here's a basic HTML template that includes the WhitneyWrks framework:
 4.  Forms
     Wrap your form elements with .form-group for proper spacing and alignment:
 
-        ```html
-        <form>
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Enter your name" />
-        </div>
-        <!-- Add more form elements here -->
-        </form>
-        ```
+    ```html
+    <form>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+    </div>
+    <!-- Add more form elements here -->
+    </form>
+    ```
 
 5.  Footer
     Structure your footer with the .page-footer class:
 
-        ```html
-
-        <div class="page-footer">
-            <div class="footer-content">
-                <!-- Footer content such as links and information -->
-            </div>
+    ```html
+    <div class="page-footer">
+        <div class="footer-content">
+            <!-- Footer content such as links and information -->
         </div>
-        ```
+    </div>
+    ```
 
 #### Typography
 
