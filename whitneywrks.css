@@ -315,3 +315,46 @@ textarea {
   }
 }
 
+/* Color Variables */
+:root {
+  --color-background: #ffe0e9; /* Light pink background */
+  --color-foreground: #333333; /* Dark grey for text */
+  --color-dark: #2c3e50; /* Dark blue for elements */
+  --color-light: #ecf0f1; /* Light grey for backgrounds */
+  --color-md-light: #bdc3c7; /* Medium light grey */
+  --color-md-dark: #34495e; /* Medium dark blue */
+  --color-primary: #8e44ad; /* Purple for primary elements */
+  --color-info: #3498db; /* Blue for information */
+  --color-success: #2ecc71; /* Green for success messages */
+  --color-danger: #e74c3c; /* Red for warnings or errors */
+  --color-callout: #f1c40f; /* Yellow for callout or attention */
+  --color-lightest: #fafafa; /* Very light grey for light elements */
+}
+
+/* Grid System */
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columns */
+  grid-gap: 2rem;
+  padding: 1rem;
+}
+
+.grid-item {
+  background-color: var(--color-light); /* Using the light color variable */
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 column for very small screens */
+  }
+}
