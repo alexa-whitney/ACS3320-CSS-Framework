@@ -5,7 +5,7 @@
 
 ![App Screenshot](https://i.imgur.com/QR6xr2J.png)
 
-![App Screenshot](https://i.imgur.com/9hKTdKh.png)
+![App Screenshot](https://i.imgur.com/lv7tOIt.png)
 
 ### Getting Started
 
