@@ -27,20 +27,23 @@ body {
   background-color: #ff91ac;
   color: #fff;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start; /* Align to the left */
+  align-items: center; /* Vertically center */
   padding: 1rem 2rem;
 }
 
 .navbar ul {
   list-style: none;
-  font-size: 20px;
+  padding: 0;
   display: flex;
   align-items: center;
+  margin: 0; /* Reset default margin */
 }
 
 .navbar ul li {
   margin-right: 20px;
+  display: flex;
+  align-items: center; /* Align text and links in the middle */
 }
 
 .navbar a,
@@ -48,6 +51,13 @@ body {
   color: #fff;
   text-decoration: none;
   font-family: "Barbie", Arial, sans-serif;
+}
+
+.title {
+  font-size: 2em; /* Smaller size for better fit */
+  margin-right: 20px; /* Add margin to separate from the links */
+  white-space: nowrap; /* Prevent wrapping */
+  flex-shrink: 0; /* Prevent title from shrinking */
 }
 
 .navbar a:hover {
